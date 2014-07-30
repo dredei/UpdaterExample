@@ -1,1 +1,1 @@
-1.0.0;http://
+1.0.1;https://github.com/dredei/UpdaterExample/blob/master/updater_example_setup_1.0.1.exe?raw=true
