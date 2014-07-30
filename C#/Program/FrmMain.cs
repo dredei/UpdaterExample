@@ -46,8 +46,8 @@ namespace Program
 
         private async void FrmMain_Load( object sender, EventArgs e )
         {
-            await this.CheckForUpdates();
             this.lblVersion.Text = this._version.ToString();
+            await this.CheckForUpdates();
         }
     }
 }
