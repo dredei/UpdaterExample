@@ -29,11 +29,21 @@ namespace Updater
             this._webClient.DownloadFileCompleted += this._webClient_DownloadFileCompleted;
         }
 
+        /// <summary>
+        /// Срабатывает, когда файл скачался
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _webClient_DownloadFileCompleted( object sender, System.ComponentModel.AsyncCompletedEventArgs e )
         {
             this._isDownloaded = true;
         }
 
+        /// <summary>
+        /// Срабатывает во время изменения прогресса скачивания
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _webClient_DownloadProgressChanged( object sender, DownloadProgressChangedEventArgs e )
         {
             this.CurrentUpdProgress = e.ProgressPercentage;
